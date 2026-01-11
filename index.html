@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nova Solutions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    section {
+      padding: 60px 40px;
+      background: white;
+      margin-bottom: 10px;
+    }
+    .hero {
+      background: linear-gradient(to right, #0057B7, #00A9E0);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .hero button {
+      background: #0057B7;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 6px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button[type="submit"] {
+      background: #0057B7;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 28px; }
+      .hero p { font-size: 16px; }
+      nav { flex-direction: column; align-items: flex-start; }
+      nav a { margin-left: 0; margin-top: 10px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <!-- Replace logo.png with your logo image -->
+  <img src="https://via.placeholder.com/150x50?text=Logo" alt="Nova Solutions Logo">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Helping Businesses Grow Since 2026</h2>
+  <p>We provide professional, reliable, and affordable solutions tailored to your needs.</p>
+  <button>Get Started</button>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Nova Solutions is dedicated to helping businesses succeed with smart strategies, modern tools, and dependable support.
+  </p>
+  <!-- Placeholder image -->
+  <img src="https://via.placeholder.com/800x400?text=About+Us+Image" alt="About Us Image" style="width:100%; margin-top:20px; border-radius:6px;">
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <img src="https://via.placeholder.com/200x150?text=Consulting" alt="Consulting">
+      <h3>Consulting</h3>
+      <p>Expert advice to guide your business decisions and strategy.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x150?text=Digital+Services" alt="Digital Services">
+      <h3>Digital Services</h3>
+      <p>Professional solutions for online presence, branding, and marketing.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x150?text=Support" alt="Support">
+      <h3>Support</h3>
+      <p>Reliable assistance whenever you need help or guidance.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="services">
+    <div class="card">
+      <img src="https://via.placeholder.com/200x150?text=Client+1" alt="Client 1">
+      <p>"Nova Solutions helped our business triple revenue in 6 months!"</p>
+      <p>- Jane D., CEO</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x150?text=Client+2" alt="Client 2">
+      <p>"Professional, fast, and reliable services. Highly recommend."</p>
+      <p>- Mike S., Founder</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: info@novasolutions.com</p>
+  <p>Phone: Available upon request</p>
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 Nova Solutions. All rights reserved.
+</footer>
+
+</body>
+</html>
