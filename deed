@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nova Solutions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    section {
+      padding: 60px 40px;
+      background: white;
+      margin-bottom: 10px;
+    }
+    .hero {
+      background: url('https://via.placeholder.com/1200x500?text=Clothing+Banner') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: auto;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    }
+    .hero a button {
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      cursor: pointer;
+      border-radius: 6px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 6px;
+      background: #fff;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .card a {
+      text-decoration: none;
+      color: #222;
+    }
+    .card a:hover h3 {
+      color: #ff4d4d;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      .hero h2 { font-size: 32px; }
+      .hero p { font-size: 16px; }
+      nav { flex-direction: column; align-items: flex-start; }
+      nav a { margin-left: 0; margin-top: 10px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/150x50?text=Logo" alt="Nova Solutions Logo">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Elevate Your Style</h2>
+  <p>Premium clothing designed for bold, modern looks.</p>
+  <!-- Replace the link with your shop page -->
+  <a href="https://www.instagram.com/yourbrandshop/" target="_blank">
+    <button>Shop Now</button>
+  </a>
+</section>
+
+<section id="about">
+  <h2>About Nova Solutions</h2>
+  <p>
+    Nova Solutions brings you high-quality, trendy clothing that fits your lifestyle. Our mission is to help you express yourself through bold and unique fashion.
+  </p>
+</section>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <div class="products">
+    <div class="card">
+      <a href="https://www.instagram.com/yourbrandshop/" target="_blank">
+        <img src="https://via.placeholder.com/200x200?text=Hoodie" alt="Hoodie">
+        <h3>Urban Hoodie</h3>
+        <p>Cozy and stylish hoodie for every season.</p>
+        <p>$49.99</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.instagram.com/yourbrandshop/" target="_blank">
+        <img src="https://via.placeholder.com/200x200?text=T-Shirt" alt="T-Shirt">
+        <h3>Classic Tee</h3>
+        <p>Soft cotton T-shirt in multiple colors.</p>
+        <p>$29.99</p>
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.instagram.com/yourbrandshop/" target="_blank">
+        <img src="https://via.placeholder.com/200x200?text=Jacket" alt="Jacket">
+        <h3>Street Jacket</h3>
+        <p>Lightweight jacket perfect for urban adventures.</p>
+        <p>$79.99</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://via.placeholder.com/200x200?text=Customer+1" alt="Customer 1">
+      <p>"Nova Solutions clothing makes me feel confident every day!"</p>
+      <p>- Alex R.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/200x200?text=Customer+2" alt="Customer 2">
+      <p>"Love the designs and quality. Highly recommend!"</p>
+      <p>- Jamie L.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: info@novasolutions.com</p>
+  <p>Phone: Available upon request</p>
+</section>
+
+<footer>
+  © 2026 Nova Solutions. All rights reserved.
+</footer>
+
+</body>
+</html>
